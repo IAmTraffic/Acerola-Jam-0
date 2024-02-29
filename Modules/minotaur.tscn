@@ -1,0 +1,165 @@
+[gd_scene load_steps=10 format=3 uid="uid://oiqnqviq3l75"]
+
+[ext_resource type="PackedScene" uid="uid://de5jl0vuhgxum" path="res://Module Components/module_base.tscn" id="1_01kur"]
+[ext_resource type="Script" path="res://Modules/minotaur.gd" id="1_md1yh"]
+[ext_resource type="Script" path="res://Module Components/module_button.gd" id="3_d33mw"]
+[ext_resource type="Material" uid="uid://daor4eyggosmh" path="res://Module Components/module_indicator_light_on_material.tres" id="4_cj8dn"]
+[ext_resource type="Script" path="res://Module Components/module_indicator_light.gd" id="5_f0u1e"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gx2qj"]
+size = Vector3(0.05, 0.01, 0.05)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3o0t"]
+albedo_color = Color(0.490196, 0.490196, 0.490196, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lj2bn"]
+size = Vector3(0.05, 0.01, 0.05)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dtxyf"]
+size = Vector3(0.05, 0.01, 0.05)
+
+[node name="Minotaur" type="Node3D"]
+script = ExtResource("1_md1yh")
+
+[node name="ModuleBase" parent="." instance=ExtResource("1_01kur")]
+
+[node name="DoorBtns" type="Node3D" parent="."]
+
+[node name="HallwayLights" type="Node3D" parent="."]
+
+[node name="SubjectMovement" type="Timer" parent="."]
+autostart = true
+
+[node name="DoorBtns-BACKUP" type="Node3D" parent="."]
+visible = false
+
+[node name="ModuleButton1" type="StaticBody3D" parent="DoorBtns-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.142623, 0.160597, 0.025)
+script = ExtResource("3_d33mw")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DoorBtns-BACKUP/ModuleButton1"]
+mesh = SubResource("BoxMesh_gx2qj")
+surface_material_override/0 = SubResource("StandardMaterial3D_e3o0t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorBtns-BACKUP/ModuleButton1"]
+shape = SubResource("BoxShape3D_lj2bn")
+
+[node name="ModuleButton2" type="StaticBody3D" parent="DoorBtns-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0364374, 0.170617, 0.025)
+script = ExtResource("3_d33mw")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DoorBtns-BACKUP/ModuleButton2"]
+mesh = SubResource("BoxMesh_gx2qj")
+surface_material_override/0 = SubResource("StandardMaterial3D_e3o0t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorBtns-BACKUP/ModuleButton2"]
+shape = SubResource("BoxShape3D_lj2bn")
+
+[node name="ModuleButton3" type="StaticBody3D" parent="DoorBtns-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.14738, -0.140402, 0.025)
+script = ExtResource("3_d33mw")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DoorBtns-BACKUP/ModuleButton3"]
+mesh = SubResource("BoxMesh_gx2qj")
+surface_material_override/0 = SubResource("StandardMaterial3D_e3o0t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorBtns-BACKUP/ModuleButton3"]
+shape = SubResource("BoxShape3D_lj2bn")
+
+[node name="ModuleButton4" type="StaticBody3D" parent="DoorBtns-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.142623, -0.0783965, 0.025)
+script = ExtResource("3_d33mw")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="DoorBtns-BACKUP/ModuleButton4"]
+mesh = SubResource("BoxMesh_gx2qj")
+surface_material_override/0 = SubResource("StandardMaterial3D_e3o0t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DoorBtns-BACKUP/ModuleButton4"]
+shape = SubResource("BoxShape3D_lj2bn")
+
+[node name="HallwayLights-BACKUP" type="Node3D" parent="."]
+visible = false
+
+[node name="ModuleIndicatorLight" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0829769, -0.0763099, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight2" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0236482, -0.0763099, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight3" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0363736, -0.0763099, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight4" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0363736, -0.142319, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight5" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0904925, -0.142319, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight6" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0363736, -0.0128212, 0.0261663)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight7" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0363736, 0.0494208, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight8" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.0363736, 0.111556, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight9" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0226341, 0.0494208, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight10" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0859693, 0.0494208, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight11" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0859693, 0.103868, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight12" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0859693, 0.161722, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[node name="ModuleIndicatorLight13" type="MeshInstance3D" parent="HallwayLights-BACKUP"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.090917, -0.0138615, 0.025)
+mesh = SubResource("BoxMesh_dtxyf")
+surface_material_override/0 = ExtResource("4_cj8dn")
+script = ExtResource("5_f0u1e")
+
+[connection signal="timeout" from="SubjectMovement" to="." method="_on_subject_movement_timeout"]

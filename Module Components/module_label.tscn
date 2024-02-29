@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cvhmptbbj7sse"]
+
+[node name="ModuleLabel" type="Label3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.026)
+pixel_size = 0.001
+modulate = Color(0, 0, 0, 1)
+text = "Subject Terminated"
+font_size = 40
+outline_size = 0
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 3
+width = 300.0

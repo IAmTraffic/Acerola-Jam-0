@@ -1,7 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://8cijb6kel42o"]
+[gd_scene load_steps=5 format=3 uid="uid://8cijb6kel42o"]
 
-[ext_resource type="PackedScene" uid="uid://de5jl0vuhgxum" path="res://module_base.tscn" id="1_71b34"]
+[ext_resource type="PackedScene" uid="uid://de5jl0vuhgxum" path="res://Module Components/module_base.tscn" id="1_71b34"]
+[ext_resource type="Script" path="res://Modules/indestructible_lizard.gd" id="1_kcoed"]
+[ext_resource type="PackedScene" uid="uid://cvhmptbbj7sse" path="res://Module Components/module_label.tscn" id="3_gxgb0"]
+[ext_resource type="PackedScene" uid="uid://drvgohcsnnb3" path="res://Module Components/module_button.tscn" id="4_hpbpe"]
 
 [node name="Indestructible Lizard" type="Node3D"]
+script = ExtResource("1_kcoed")
 
 [node name="ModuleBase" parent="." instance=ExtResource("1_71b34")]
+
+[node name="ModuleLabel" parent="." instance=ExtResource("3_gxgb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.189213, 0.207489, 0.026)
+
+[node name="ModuleButton" parent="." instance=ExtResource("4_hpbpe")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.136279, -0.140525, 0.025)
+
+[node name="ModuleLabel2" parent="." instance=ExtResource("3_gxgb0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.185681, 0.00789548, 0.026)

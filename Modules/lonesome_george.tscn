@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cei8aahquw2t8"]
+
+[ext_resource type="PackedScene" uid="uid://de5jl0vuhgxum" path="res://Module Components/module_base.tscn" id="1_4s33g"]
+[ext_resource type="Script" path="res://Modules/lonesome_george.gd" id="1_75nxe"]
+[ext_resource type="PackedScene" uid="uid://drvgohcsnnb3" path="res://Module Components/module_button.tscn" id="2_1poyv"]
+[ext_resource type="PackedScene" uid="uid://chg1ct3sslo45" path="res://Module Components/module_indicator_light.tscn" id="3_7piqb"]
+
+[node name="Lonesome George" type="Node3D"]
+script = ExtResource("1_75nxe")
+
+[node name="ModuleBase" parent="." instance=ExtResource("1_4s33g")]
+
+[node name="ModuleButton" parent="." instance=ExtResource("2_1poyv")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -0.0854704, 0.025)
+
+[node name="ModuleIndicatorLight" parent="." instance=ExtResource("3_7piqb")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.0923479, 0.025)
+
+[node name="LonelyTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="RespondTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="LonelyTimer" to="." method="_on_lonely_timer_timeout"]
+[connection signal="timeout" from="RespondTimer" to="." method="_on_respond_timer_timeout"]

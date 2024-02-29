@@ -2,10 +2,10 @@ Peanut / Weeping Angels
 	You have to monitor them on the camera every so often
 Minotaur
 	You have to always give it an exit out or it will tear down the walls, so you have to strategically open and close doors so that it can never escape.
-One Mean Gator
+DONE - One Mean Gator
 	Has to be periodically submerged in acid to stop it from becoming too powerful and escaping, but has to be periodically removed from acid to stop it from dying.
 		We are containing, not terminating!
-Lonesome George
+DONE - Lonesome George
 	Gets violent if it feels lonely. It will periodically ping you, and you have to ping it back to demonstrate that he isn't alone.
 Gameshow Host
 	Periodically asks you trivia. If you don't give the correct answer in time, he gets violent and escapes.

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://chg1ct3sslo45"]
+
+[ext_resource type="Material" uid="uid://daor4eyggosmh" path="res://Module Components/module_indicator_light_on_material.tres" id="1_n650h"]
+[ext_resource type="Script" path="res://Module Components/module_indicator_light.gd" id="2_anubg"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6m7nv"]
+top_radius = 0.05
+bottom_radius = 0.05
+height = 0.05
+
+[node name="ModuleIndicatorLight" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.025)
+mesh = SubResource("CylinderMesh_6m7nv")
+surface_material_override/0 = ExtResource("1_n650h")
+script = ExtResource("2_anubg")
