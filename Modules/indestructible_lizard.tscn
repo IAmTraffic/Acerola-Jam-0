@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://8cijb6kel42o"]
+
+[ext_resource type="PackedScene" uid="uid://de5jl0vuhgxum" path="res://module_base.tscn" id="1_71b34"]
+
+[node name="Indestructible Lizard" type="Node3D"]
+
+[node name="ModuleBase" parent="." instance=ExtResource("1_71b34")]

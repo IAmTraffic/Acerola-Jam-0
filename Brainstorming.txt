@@ -1,0 +1,49 @@
+Theme - Aberration
+A literal intepretation of this theme involves the abnormal outcome of something measurable, such as
+chromatic aberration (a defective lens causing abnormal refraction), or perhaps an unexpected change in the flow of time,
+a temporal aberration. The abstract intepretations of this theme are endless of course and I don't think it's possible to take it too far.
+You could also capture the sinister undertones of this word's definition as a certain piece of media I like describes supernatural
+beings as aberrations (unwelcome entities you wouldn't expect to exist). This theme is all about defying expectations literally
+and abstractly, as well as getting really pretentious.
+
+Side note: If your idea is chromatic aberration, you probably aren't going to win unless you're insanely goated.
+
+
+
+
+
+
+
+Ideas:
+	You are a bug trying to break someone's code
+	A super abstract puzzle game where you have inputs that have unpredictable outcomes
+	A platformer where you randomly lose control of your character
+	You are an alien creature (an aberration) killing people on a space station
+	A pony-island-esque game (bad idea)
+	You are presented with patterns and have to identify the aberration among them
+	You are asked a series of questions and you want your answers to be as far removed from the normal person's answers as possible
+	You are a secret zombie and have to infect an arctic outpost without being caught
+	A rage game where you think you know how to beat a level but it keeps changing the rules on you to prevent you from doing so
+	You are a portal-esque lab rat and the testers keep changing the reward function on you
+	You are presented with a long series of yes/no questions and you have to figure out what the rule is that determines which questions should be answered in which ways
+	A tower defense game where the towers differ from their descriptions in random ways
+	An exploration game where your map is not accurate
+	A puzzle game where the rules change every time that you "beat" a level, in a way that prevents you from beating the level, so you have to figure out all the rules before you can actually win
+	A platformer where a childish god changes the rules of the game to keep you from winning
+	A platformer where the entire level is invisible, but your dead body leaves blood splatter that reveals some of the level
+	You are an SCP-esque field agent capturing aberrations, or a desk-worker cataloguing or monitoring or maintaning the containment of aberrations
+	You're in a remote research station and you have to figure out who the secret zombie is before it kills you
+
+Better Ideas:
+	You are the aberration
+		You are an alien creature (an aberration) killing people on a space station
+	You must identify the aberration
+		A series of puzzles where you have to identify the rules to win in each puzzle before moving on
+		You are presented with patterns and have to identify the aberration among them
+		A platformer where a childish god changes the rules of the game to keep you from winning
+		A puzzle game where the rules change every time that you "beat" a level, in a way that prevents you from beating the level, so you have to figure out all the rules before you can actually win
+	You have to manage the aberration's weirdness
+		You are an SCP-esque field agent capturing aberrations, or a desk-worker cataloguing or monitoring or maintaning the containment of aberrations
+
+The Winning Idea:
+	You are an SCP-esque desk jockey who has to monitor the containment of several aberrations, FNaF-style

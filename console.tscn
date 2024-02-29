@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0857ico6a1y8"]
+
+[ext_resource type="Script" path="res://console.gd" id="1_jt5yu"]
+[ext_resource type="PackedScene" uid="uid://cbi150y2l3nkj" path="res://Assets/3D/console.glb" id="2_g3f5c"]
+
+[sub_resource type="Environment" id="Environment_be4lp"]
+background_mode = 1
+background_color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[node name="Console" type="Node3D"]
+script = ExtResource("1_jt5yu")
+
+[node name="console" parent="." instance=ExtResource("2_g3f5c")]
+
+[node name="ModuleWrapper" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.285, 2.96)
+current = true
+fov = 23.6
+size = 3.857
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_be4lp")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(0.707107, 0, -0.707107, 0.5, 0.707107, 0.5, 0.5, -0.707107, 0.5, 0, 0, 0)
+light_color = Color(0.796078, 0.835294, 0.85098, 1)
+shadow_enabled = true

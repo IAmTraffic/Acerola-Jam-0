@@ -10,6 +10,11 @@ config_version=5
 
 [application]
 
-config/name="Acerola Jam 0"
+config/name="ACF - Aberration Containment Foundation"
+run/main_scene="res://console.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[layer_names]
+
+3d_physics/layer_1="Module Component"
