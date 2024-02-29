@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://drvgohcsnnb3"]
+[gd_scene load_steps=4 format=3 uid="uid://drvgohcsnnb3"]
 
 [ext_resource type="Script" path="res://Module Components/module_button.gd" id="1_buiah"]
 
@@ -6,9 +6,6 @@
 top_radius = 0.05
 bottom_radius = 0.05
 height = 0.05
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e3o0t"]
-albedo_color = Color(0.490196, 0.490196, 0.490196, 1)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_h3mfo"]
 height = 0.05
@@ -20,7 +17,12 @@ script = ExtResource("1_buiah")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CylinderMesh_tj5bq")
-surface_material_override/0 = SubResource("StandardMaterial3D_e3o0t")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CylinderShape3D_h3mfo")
+
+[node name="PressedDurationTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="PressedDurationTimer" to="." method="_on_pressed_duration_timer_timeout"]
