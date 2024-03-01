@@ -18,7 +18,10 @@ const MODULE_BUTTON_TOGGLED_MATERIAL = preload("res://Module Components/module_b
 func _ready():
 	mesh_instance_3d.set_surface_override_material(0, MODULE_BUTTON_BASE_MATERIAL)
 
-func press() -> void:
+func press(button_pressed, button_index) -> void:
+	if !button_pressed or button_index != 1:
+		return
+	
 	if toggle_mode:
 		is_toggled = !is_toggled
 		if is_toggled:

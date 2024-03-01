@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0857ico6a1y8"]
+[gd_scene load_steps=5 format=3 uid="uid://c0857ico6a1y8"]
 
 [ext_resource type="Script" path="res://console.gd" id="1_jt5yu"]
 [ext_resource type="PackedScene" uid="uid://cbi150y2l3nkj" path="res://Assets/3D/console.glb" id="2_g3f5c"]
+[ext_resource type="PackedScene" uid="uid://c4nx4kivnwf8s" path="res://handbook.tscn" id="3_lb1x2"]
 
 [sub_resource type="Environment" id="Environment_be4lp"]
 background_mode = 1
@@ -16,6 +17,7 @@ script = ExtResource("1_jt5yu")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.285, 2.96)
+cull_mask = 1
 current = true
 fov = 23.6
 size = 3.857
@@ -27,3 +29,20 @@ environment = SubResource("Environment_be4lp")
 transform = Transform3D(0.707107, 0, -0.707107, 0.5, 0.707107, 0.5, 0.5, -0.707107, 0.5, 0, 0, 0)
 light_color = Color(0.796078, 0.835294, 0.85098, 1)
 shadow_enabled = true
+
+[node name="Handbook" parent="." instance=ExtResource("3_lb1x2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.321, 1.719)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UILabel" type="Label" parent="Control"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 1.0
+offset_bottom = 23.0

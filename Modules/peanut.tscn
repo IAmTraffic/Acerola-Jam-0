@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://bw8h6shbtya8f"]
+
+[ext_resource type="PackedScene" uid="uid://de5jl0vuhgxum" path="res://Module Components/module_base.tscn" id="1_vg3i7"]
+[ext_resource type="Script" path="res://Modules/peanut.gd" id="1_yufoy"]
+[ext_resource type="PackedScene" uid="uid://cvhmptbbj7sse" path="res://Module Components/module_label.tscn" id="3_s070r"]
+[ext_resource type="PackedScene" uid="uid://drvgohcsnnb3" path="res://Module Components/module_button.tscn" id="4_267ic"]
+[ext_resource type="PackedScene" uid="uid://chg1ct3sslo45" path="res://Module Components/module_indicator_light.tscn" id="5_y7fah"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_twgjv"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Peanut" type="Node3D"]
+script = ExtResource("1_yufoy")
+
+[node name="ModuleBase" parent="." instance=ExtResource("1_vg3i7")]
+
+[node name="Monitor" type="Sprite3D" parent="."]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0.0751943, 0.0745623, 0.0301522)
+texture = SubResource("ViewportTexture_twgjv")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+own_world_3d = true
+size = Vector2i(64, 64)
+
+[node name="RoomWrapper" type="Node3D" parent="SubViewport"]
+
+[node name="TimerWrapper" type="Node3D" parent="."]
+
+[node name="ModuleLabel" parent="." instance=ExtResource("3_s070r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.145401, 0.026)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CameraNext" parent="." instance=ExtResource("4_267ic")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.141553, -0.119745, 0.025)
+
+[node name="CameraPrev" parent="." instance=ExtResource("4_267ic")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.142, -0.12, 0.025)
+
+[node name="ModuleIndicatorLight" parent="." instance=ExtResource("5_y7fah")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.110552, 0.0724991, 0.025)
+
+[connection signal="pressed" from="CameraNext" to="." method="_on_camera_next_pressed"]
+[connection signal="pressed" from="CameraPrev" to="." method="_on_camera_prev_pressed"]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4nx4kivnwf8s"]
+
+[ext_resource type="Script" path="res://handbook.gd" id="1_n5cqw"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_30i4n"]
+size = Vector2(0.3, 0.4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lwh5h"]
+size = Vector3(0.3, 0.4, 0.1)
+
+[node name="Handbook" type="StaticBody3D"]
+script = ExtResource("1_n5cqw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_30i4n")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_lwh5h")
