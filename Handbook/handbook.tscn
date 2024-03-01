@@ -1,0 +1,117 @@
+[gd_scene load_steps=15 format=3 uid="uid://c4nx4kivnwf8s"]
+
+[ext_resource type="Script" path="res://Handbook/handbook.gd" id="1_n5cqw"]
+[ext_resource type="Script" path="res://Module Components/simple_button.gd" id="2_b4egt"]
+[ext_resource type="PackedScene" uid="uid://clfsv2lxvglwx" path="res://Handbook/handbook_control.tscn" id="3_qqgvp"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_30i4n"]
+size = Vector2(0.3, 0.4)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_baxth"]
+albedo_color = Color(0.564706, 0.203922, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lwh5h"]
+size = Vector3(0.3, 0.4, 0.01)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_caeel"]
+size = Vector3(0.25, 0.05, 0.05)
+
+[sub_resource type="BoxMesh" id="BoxMesh_si2yc"]
+size = Vector3(0.25, 0.05, 0.05)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y2cg4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7q56w"]
+size = Vector3(0.02, 0.02, 0.02)
+
+[sub_resource type="PrismMesh" id="PrismMesh_g5r4o"]
+left_to_right = 1.0
+size = Vector3(0.02, 0.02, 0.02)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_rmevi"]
+viewport_path = NodePath("HandbookPage/SubViewport")
+
+[sub_resource type="QuadMesh" id="QuadMesh_jys3b"]
+size = Vector2(0.25, 0.355)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u6iug"]
+
+[node name="Handbook" type="StaticBody3D"]
+script = ExtResource("1_n5cqw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("QuadMesh_30i4n")
+surface_material_override/0 = SubResource("StandardMaterial3D_baxth")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_lwh5h")
+
+[node name="Prev Page" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.156, 0.025)
+script = ExtResource("2_b4egt")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Prev Page"]
+shape = SubResource("BoxShape3D_caeel")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Prev Page"]
+mesh = SubResource("BoxMesh_si2yc")
+surface_material_override/0 = SubResource("StandardMaterial3D_y2cg4")
+
+[node name="Next Page" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114083, -0.166987, 0.000968566)
+script = ExtResource("2_b4egt")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Next Page"]
+shape = SubResource("BoxShape3D_7q56w")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Next Page"]
+mesh = SubResource("PrismMesh_g5r4o")
+surface_material_override/0 = SubResource("StandardMaterial3D_y2cg4")
+
+[node name="HandbookPage" type="Sprite3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(0.045, 0, 0, 0, 0.045, 0, 0, 0, 0.045, 0, -0.0178441, 0.00388781)
+texture = SubResource("ViewportTexture_rmevi")
+
+[node name="SubViewport" type="SubViewport" parent="HandbookPage"]
+size = Vector2i(512, 617)
+size_2d_override_stretch = true
+
+[node name="HandbookControl" parent="HandbookPage/SubViewport" instance=ExtResource("3_qqgvp")]
+
+[node name="White" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00188781)
+visible = false
+mesh = SubResource("QuadMesh_jys3b")
+surface_material_override/0 = SubResource("StandardMaterial3D_u6iug")
+
+[node name="Header" type="Label3D" parent="White"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.130174, 0.002)
+visible = false
+pixel_size = 0.0001
+modulate = Color(0, 0, 0, 1)
+text = "Test Header j j jj j j j j j j j j j jj  jj j j j j j j
+"
+font_size = 256
+outline_size = 0
+vertical_alignment = 0
+width = 2500.0
+
+[node name="PageContents" type="Label3D" parent="White"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11373, 0.0948552, 0.00223064)
+visible = false
+pixel_size = 0.0001
+double_sided = false
+modulate = Color(0, 0, 0, 1)
+text = "This is some test text alksdfj laskdjf j j j j j j 
+It goes here"
+font_size = 128
+outline_size = 0
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 3
+width = 2410.0

@@ -64,8 +64,8 @@ func get_mouse_target(event: InputEvent) -> Dictionary:
 	var query = PhysicsRayQueryParameters3D.create(from, to)
 	return space_state.intersect_ray(query)
 
-func _ready():
-	spawn_module(Vector2i(0, 0), INDESTRUCTIBLE_LIZARD_MODULE)
+#func _ready():
+	#spawn_module(Vector2i(0, 0), INDESTRUCTIBLE_LIZARD_MODULE)
 	#spawn_module(Vector2i(1, 0), LONESOME_GEORGE_MODULE)
 	#spawn_module(Vector2i(2, 0), MINOTAUR_MODULE)
 	#spawn_module(Vector2i(3, 0), PEANUT_MODULE)

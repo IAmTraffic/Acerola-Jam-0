@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://c0857ico6a1y8"]
 
-[ext_resource type="Script" path="res://console.gd" id="1_jt5yu"]
+[ext_resource type="Script" path="res://Console/console.gd" id="1_jt5yu"]
 [ext_resource type="PackedScene" uid="uid://cbi150y2l3nkj" path="res://Assets/3D/console.glb" id="2_g3f5c"]
-[ext_resource type="PackedScene" uid="uid://c4nx4kivnwf8s" path="res://handbook.tscn" id="3_lb1x2"]
+[ext_resource type="PackedScene" uid="uid://c4nx4kivnwf8s" path="res://Handbook/handbook.tscn" id="3_lb1x2"]
 
 [sub_resource type="Environment" id="Environment_be4lp"]
 background_mode = 1

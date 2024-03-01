@@ -78,9 +78,9 @@ func setup_rooms(room_count: int) -> void:
 		timer.start()
 
 
-func _on_camera_next_pressed(button):
+func _on_camera_next_pressed(_button):
 	set_monitor_camera((current_monitored_room_index + 1) % room_wrapper.get_children().size())
 
 
-func _on_camera_prev_pressed(button):
+func _on_camera_prev_pressed(_button):
 	set_monitor_camera(current_monitored_room_index - 1 if current_monitored_room_index > 0 else room_wrapper.get_children().size() - 1)
