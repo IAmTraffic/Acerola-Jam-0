@@ -190,10 +190,8 @@ func setup_door_btns() -> void:
 		door.get_node("MeshInstance3D").mesh = HALLWAY_LIGHT_BOX_SHAPE
 		door_btns.add_child(door)
 		position_grid_element(door, door_loc)
-		#door.connect("pressed", door_btn_pressed)
-		#door.connect("unpressed", door_btn_unpressed)
 		
-		door.press()
+		door.press(true, 1)
 		
 		door_loc.door = door
 

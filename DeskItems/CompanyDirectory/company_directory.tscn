@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://cs0w6gai2u1o3"]
+
+[ext_resource type="Script" path="res://DeskItems/CompanyDirectory/company_directory.gd" id="1_wtekc"]
+[ext_resource type="PackedScene" uid="uid://bi2a4gfmtjurq" path="res://DeskItems/CompanyDirectory/company_directory_control.tscn" id="2_x2mj1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_10xm5"]
+size = Vector3(0.2, 0.3, 0.05)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c07yo"]
+size = Vector3(0.2, 0.3, 0.05)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_h5ydf"]
+viewport_path = NodePath("Page/SubViewport")
+
+[node name="Company Directory" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_wtekc")
+
+[node name="ClosedMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_10xm5")
+
+[node name="ClosedCollider" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_c07yo")
+
+[node name="Page" type="Sprite3D" parent="."]
+transform = Transform3D(-0.035, 0, -2.62268e-09, 0, 0.055, 0, 3.0598e-09, 0, -0.03, 0, -1.29807e-09, -0.0296965)
+texture = SubResource("ViewportTexture_h5ydf")
+
+[node name="SubViewport" type="SubViewport" parent="Page"]
+
+[node name="CompanyDirectoryControl" parent="Page/SubViewport" instance=ExtResource("2_x2mj1")]

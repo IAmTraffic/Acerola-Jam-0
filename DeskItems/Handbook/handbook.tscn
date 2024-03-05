@@ -1,8 +1,8 @@
 [gd_scene load_steps=15 format=3 uid="uid://c4nx4kivnwf8s"]
 
-[ext_resource type="Script" path="res://Handbook/handbook.gd" id="1_n5cqw"]
+[ext_resource type="Script" path="res://DeskItems/Handbook/handbook.gd" id="1_n5cqw"]
 [ext_resource type="Script" path="res://Module Components/simple_button.gd" id="2_b4egt"]
-[ext_resource type="PackedScene" uid="uid://clfsv2lxvglwx" path="res://Handbook/handbook_control.tscn" id="3_qqgvp"]
+[ext_resource type="PackedScene" uid="uid://clfsv2lxvglwx" path="res://DeskItems/Handbook/handbook_control.tscn" id="3_qqgvp"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_30i4n"]
 size = Vector2(0.3, 0.4)
@@ -59,7 +59,7 @@ mesh = SubResource("BoxMesh_si2yc")
 surface_material_override/0 = SubResource("StandardMaterial3D_y2cg4")
 
 [node name="Next Page" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114083, -0.166987, 0.000968566)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.116196, -0.163943, 0.000968566)
 script = ExtResource("2_b4egt")
 metadata/_edit_group_ = true
 
@@ -72,7 +72,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_y2cg4")
 
 [node name="HandbookPage" type="Sprite3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(0.045, 0, 0, 0, 0.045, 0, 0, 0, 0.045, 0, -0.0178441, 0.00388781)
+transform = Transform3D(0.049, 0, 0, 0, 0.049, 0, 0, 0, 0.045, 0, -0.0210173, 0.004)
 texture = SubResource("ViewportTexture_rmevi")
 
 [node name="SubViewport" type="SubViewport" parent="HandbookPage"]

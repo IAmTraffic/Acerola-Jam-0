@@ -1,0 +1,3 @@
+Reviewing field reports to make sure that they were filled out correctly
+Reviewing expense reports
+ - Routing mail

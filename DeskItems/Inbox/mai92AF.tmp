@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4mhaum5eb65a"]
+
+[ext_resource type="Script" path="res://DeskItems/Inbox/mail.gd" id="1_37n0d"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h50s7"]
+size = Vector3(0.2, 0.1, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0805k"]
+size = Vector3(0.2, 0.1, 0.2)
+
+[node name="Mail" type="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_37n0d")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_h50s7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_0805k")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0718108, 0.997418, 0, -0.997418, 0.0718108, 0, 0.091058, 0)
+text = "adsf"

@@ -1,8 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://c0857ico6a1y8"]
+[gd_scene load_steps=9 format=3 uid="uid://c0857ico6a1y8"]
 
 [ext_resource type="Script" path="res://Console/console.gd" id="1_jt5yu"]
 [ext_resource type="PackedScene" uid="uid://cbi150y2l3nkj" path="res://Assets/3D/console.glb" id="2_g3f5c"]
-[ext_resource type="PackedScene" uid="uid://c4nx4kivnwf8s" path="res://Handbook/handbook.tscn" id="3_lb1x2"]
+[ext_resource type="PackedScene" uid="uid://c4nx4kivnwf8s" path="res://DeskItems/Handbook/handbook.tscn" id="3_lb1x2"]
+[ext_resource type="PackedScene" uid="uid://dejsc6w1xs6sd" path="res://DeskItems/Punch Clock/punch_clock.tscn" id="4_oypc0"]
+[ext_resource type="PackedScene" uid="uid://cs0w6gai2u1o3" path="res://DeskItems/CompanyDirectory/company_directory.tscn" id="5_lyore"]
+[ext_resource type="PackedScene" uid="uid://ci4d1yn7gu4wd" path="res://DeskItems/Inbox/inbox.tscn" id="6_84fun"]
+[ext_resource type="PackedScene" uid="uid://hxcgc6joipho" path="res://Assets/post_shift_review.tscn" id="7_k2t3j"]
 
 [sub_resource type="Environment" id="Environment_be4lp"]
 background_mode = 1
@@ -30,8 +34,22 @@ transform = Transform3D(0.707107, 0, -0.707107, 0.5, 0.707107, 0.5, 0.5, -0.7071
 light_color = Color(0.796078, 0.835294, 0.85098, 1)
 shadow_enabled = true
 
-[node name="Handbook" parent="." instance=ExtResource("3_lb1x2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.321, 1.719)
+[node name="DeskItemsWrapper" type="Node3D" parent="."]
+unique_name_in_owner = true
+
+[node name="Handbook" parent="DeskItemsWrapper" instance=ExtResource("3_lb1x2")]
+transform = Transform3D(0.849921, 0.526821, 0.00965838, -0.179219, 0.2718, 0.945519, 0.495494, -0.805347, 0.325425, 0.211903, 0.92, -0.266)
+
+[node name="Punch Clock" parent="DeskItemsWrapper" instance=ExtResource("4_oypc0")]
+unique_name_in_owner = true
+transform = Transform3D(0.979343, 0, 0.202206, 0, 1, 0, -0.202206, 0, 0.979343, -0.716845, 1, -0.239395)
+
+[node name="Company Directory" parent="DeskItemsWrapper" instance=ExtResource("5_lyore")]
+transform = Transform3D(-0.898794, -0.438371, 2.88945e-08, -0.144888, 0.297064, -0.943801, 0.413735, -0.848283, -0.330514, -0.278712, 0.950946, -0.295418)
+
+[node name="In Box" parent="DeskItemsWrapper" instance=ExtResource("6_84fun")]
+unique_name_in_owner = true
+transform = Transform3D(0.993946, 0, -0.109873, 0, 1, 0, 0.109873, 0, 0.993946, 0.700826, 0.970572, -0.301832)
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -46,3 +64,6 @@ unique_name_in_owner = true
 layout_mode = 0
 offset_right = 1.0
 offset_bottom = 23.0
+
+[node name="PostShiftReview" parent="." instance=ExtResource("7_k2t3j")]
+unique_name_in_owner = true

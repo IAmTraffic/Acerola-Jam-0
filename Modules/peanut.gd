@@ -23,6 +23,7 @@ const TIMER_DURATION = 14.0
 var current_monitored_room_index: int
 
 func _ready():
+	module_indicator_light.beeps = true
 	setup_rooms(2)
 	set_monitor_camera(0)
 

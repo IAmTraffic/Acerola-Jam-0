@@ -1,4 +1,4 @@
-Welcome to the ACF!,ACF-HIL,Page2
+Welcome to the ACF!,ACF-HIL,ACF-173,ACF-CR3,ACF-GRG
 "Welcome to the Aberration Containment Foundation!
 
 You have been assigned to the Aberrant Subjects Containment department. Your job will involve monitoring animate, potentially-sentient Aberrations and ensuring that they remain contained within their facilities.
@@ -7,20 +7,36 @@ On each shift you will be assigned a number of Aberrant Subjects to monitor. Eac
 
 A detailed description of each Aberration Subject can be found on the later pages of this handbook. Please review it at your convenience. When you are ready to begin your shift, punch in at your workstation. Good luck!
 
-Note: Your job is to CONTAIN your assigned Aberrant Subjects, not to terminate them. The containment procedures for some of your assigned Subjects may pose a lethal hazard to the Subjects themselves. In addition to ensuring these Subjects’ containment, it is your duty to ensure their continued survival.","Description
-ACF-HIL, more commonly known as the Homocidal, Indestructable Lizard, is a reptilian-looking quadroped similar in size and shape to an aligator.
-
-ACF-HIL has demonstrated the following Aberrant qualities:
+[b]Note:[/b] Your job is to CONTAIN your assigned Aberrant Subjects, not to terminate them. The containment procedures for some of your assigned Subjects may pose a lethal hazard to the Subjects themselves. In addition to ensuring these Subjects’ containment, it is your duty to ensure their continued survival.","[b]Description[/b]
+ACF-HIL, more commonly known as the Homocidal, Indestructable Lizard, is a reptilian-looking quadroped similar in size and shape to an aligator.","[b]Description[/b]
+Instances of ACF-173 appear to be statues made of concrete and rebar and are 231 cm in height.","[b]Description[/b]
+ACF-CR3 is a 287cm-tall chimera of a human and a bull. ACF-CR3 does not appear to be capable of human-level communication.","[b]Description[/b]
+Due to its aberrant characteristics, ACF-GRG has not be visibly described. From indirect observation we believe that ACF-GRG is roughly humanoid in size and shape, and it has not demonstrated an ability to communicate in any known human language. ACF-GRG has demonstrated an ability to understand some simple spoken English commands, but this understanding appears to be highly limited and unreliable. Research into communicating with ACF-GRG is ongoing."
+,"ACF-HIL has demonstrated the following Aberrant qualities:
 1) ACF-HIL is capable of speaking and understanding at least 4 spoken human languages, including English.
 2) ACF-HIL is capable of steadily regenerating destroyed parts of its body.
-3) ACF-HIL is capable of feats of strength previously thought impossible from a creature of its size. To date, purely physical restraints (eg. chains, concrete floors, steel doors, etc.) have proven to be insufficient for containing ACF-HIL.
-
-Containment Procedures
+3) ACF-HIL is capable of feats of strength previously thought impossible from a creature of its size. To date, purely physical restraints (eg. chains, concrete floors, steel doors, etc.) have proven to be insufficient for containing ACF-HIL.","ACF-173 instances have demonstrated the following Aberrant qualities:
+1) ACF-173 instances are able to move while not being observed.
+1.1) Research into what counts as being “observed” is ongoing, but it has been confirmed that, in addition to direct visual observation, visual observation via CCTV camera is sufficient to petrify ACF-173 instances
+2) ACF-173 instances are able to move with aberrantly-high speed when not being petrified via observation. Speeds in excess of 80 km/h have been indirectly measured.","Besides its fundamentally aberrant nature, ACF-CR3 has demonstrated the following Aberrant qualities:
+1) ACF-CR3 is at all times aware of the shortest sensible path to the outside of the containment facility.
+2) If ACF-CR3 has no sensible path to the outside of the containment facility, ACF-CR3 has demonstrated a level of strength sufficient to break down any intervening doors, walls, or other physical barriers that we are capable of constructing in order to escape this facility.","ACF-GRG has demonstrated the following aberrant qualities:
+1) Visual observation of ACF-GRG, including indirect visual observation of ACF-GRG via CCTV camera, has proven to be a lethal cognito hazard. All personel who have been visually observed ACF-GRG have immediately had what appears to be a stroke, and have not survived the exposure.
+2) ACF-GRG becomes frightened when left alone for long periods of time. When frightened in this way, ACF-GRG has manifested the ability to escape physical restraints (eg. concrete holding cells, locked metal doors, etc.) through means currently not understood. Such escape attempts have resulted in the deaths of 54 personel members to date."
+,"[b]Containment Procedures[/b]
 ACF-HIL is to be periodically submerged in a vat of 82% hydrochloric acid. This process ensures that ACF-HIL remains too physically damaged to mount an escape attempt.
 The period of being submerged must be timed to meet the following two criteria:
 1) ACF-HIL must not remain outside of the acid bath for long enough to regenerate sufficient bodymass to escape its containment facility and kill all local human life.
-2) ACF-HIL must not remain within the acid bath for long enough to terminate ACF-HIL.
-
-Module Instructions
+2) ACF-HIL must not remain within the acid bath for long enough to terminate ACF-HIL.","[b]Containment Procedure[/b]
+ACF-173 instances are to be periodically observed via CCTV. ACF-173 instances have demonstrated an inability to mount an escape attempt when they are observed every 10-15 seconds.","[b]Containment Procedures[/b]
+ACF-CR3 has been placed in a sublevel of the containment facility. This sublevel has several exitways leading to the outside. These exits are to be strategically opened and closed to ensure that
+1) ACF-CR3 always has a direct exit path and
+2) ACF-CR3 is never able to reach an open exit.","[b]Containment Procedures[/b]
+ACF-GRG is contained within a concrete cell. No entry into this cell is to be performed unless absolutely necessary. ACF-GRG has been equipped with an “R-U-THERE” call-and-response device. When ACF-GRG begins to be frightened due to being left alone, it will activate its terminal of the R-U-THERE device. The staff member assigned to monitoring ACF-GRG must then promptly respond by activating their terminal of the R-U-THERE device, signalling to ACF-GRG that it is not truly alone and calming it before an escape attempt is made."
+,"[b]Module Instructions[/b]
 Your workstation module for monitoring ACF-HIL features a button which, upon activation will take ACF-HIL in and out of the acid bath.
-Additionally, your workstation module features an indicator label which will inform you if ACF-HIL becomes dangerously close to either escape or termination.",Bongo!
+Additionally, your workstation module features an indicator label which will inform you if ACF-HIL becomes dangerously close to either escape or termination.","[b]Module Instructions[/b]
+Your workstation module for monitoring ACF-173 instances features a CCTV display and two buttons which, if multiple ACF-173 instances are present in your facility at the time of your shift, will cycle through the ACF-173 CCTV cameras, allowing you to periodically observe ACF-173 instances.
+Additionally, your workstation module features an indicator light. This light will activate if any ACF-173 instance begins an escape attempt. If this light turns on, you only have a few seconds to observe the offending instance.","[b]Module Instruction[/b]
+Your workstation for monitoring ACF-CR3 features a representational display of ACF-CR3’s containment sublevel. The active indicator light represents ACF-CR3’s current position. The buttons on your workstation represent the exit doors to the sublevel. A pressed button (which will be lit up) indicates an open door.","[b]Module Instructions[/b]
+Your workstation for monitoring ACF-GRG is very simple. It features an indicator light and a button. When ACF-GRG becomes frightened, it will activate its R-U-THERE terminal, which will turn on your indicator light. You must then promptly press your button, sending an R-U-THERE response to ACF-GRG."

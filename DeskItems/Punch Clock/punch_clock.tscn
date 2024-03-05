@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dejsc6w1xs6sd"]
+
+[ext_resource type="Script" path="res://DeskItems/Punch Clock/punch_clock.gd" id="1_ldxwf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_fs65t"]
+size = Vector3(0.2, 0.2, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_od6xy"]
+size = Vector3(0.2, 0.2, 0.2)
+
+[node name="Punch Clock" type="StaticBody3D"]
+script = ExtResource("1_ldxwf")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_fs65t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_od6xy")

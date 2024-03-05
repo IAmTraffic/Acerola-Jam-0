@@ -1,0 +1,12 @@
+[
+	{
+		"inbox_count": 3,
+		"modules": []
+	},
+	{
+		"inbox_count": 10,
+		"modules": [
+			"GRG"
+		]
+	}
+]

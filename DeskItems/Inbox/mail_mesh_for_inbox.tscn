@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0gfp77fuq7wa"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l17o3"]
+size = Vector3(0.2, 0.1, 0.2)
+
+[node name="MailMeshForInbox" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_l17o3")

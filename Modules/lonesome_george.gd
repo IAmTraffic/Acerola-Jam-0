@@ -15,6 +15,8 @@ const TIME_TO_RESPOND = 5.0
 var IS_LONELY := false
 
 func _ready():
+	lonely_indicator_light.beeps = true
+	
 	respond_btn.connect("pressed", on_respond_pressed)
 	
 	respond_timer.wait_time = TIME_TO_RESPOND
