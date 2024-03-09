@@ -9,3 +9,4 @@ DONE - Lonesome George
 	Gets violent if it feels lonely. It will periodically ping you, and you have to ping it back to demonstrate that he isn't alone.
 Gameshow Host
 	Periodically asks you trivia. If you don't give the correct answer in time, he gets violent and escapes.
+

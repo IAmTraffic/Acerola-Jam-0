@@ -33,14 +33,14 @@ func _process(_delta):
 
 func _input(event):
 	#Handle clicking on things
-	if event is InputEventMouseButton:
+	if event is InputEventMouseButton and !post_shift_review.visible:
 		var result = get_mouse_target(event)
 		
 		if result and result.collider.has_method("press"):
 				result.collider.press(event.pressed, event.button_index)
 	
 	#Handle the mouseover for diagetic UI
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and !post_shift_review.visible:
 		ui_label.position = event.position - Vector2(ui_label.get_minimum_size().x / 2, ui_label.get_minimum_size().y)
 		
 		var result = get_mouse_target(event)
@@ -66,12 +66,14 @@ func _ready():
 	inbox.connect("inbox_cleared", on_inbox_cleared)
 	
 	inbox.process_mode = Node.PROCESS_MODE_DISABLED
-	#post_shift_review.hide()
+	post_shift_review.hide()
 
 func on_inbox_cleared(num_mistakes):
 	shift_failures.mail_mistakes = num_mistakes
 	cleanup_shift()
 	
+	post_shift_review.shift_failures = shift_failures
+	post_shift_review.render_review()
 	post_shift_review.show()
 	#desk_items_wrapper.process_mode = Node.PROCESS_MODE_DISABLED
 
